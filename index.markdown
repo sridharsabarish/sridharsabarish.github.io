@@ -7,3 +7,6 @@ layout: home
 
 
 Current Focus : Inventory Manager
+[GitHub Project](https://github.com/sabarish-sridhar/InventoryManager)
+
+
