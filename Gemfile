@@ -9,6 +9,9 @@ source "https://rubygems.org"
 # Happy Jekylling!
 #gem "jekyll", "~> 4.3.3"
 gem "github-pages", "~> 227", group: :jekyll_plugins
+# For Cloudflare Pages compatibility, use Jekyll directly instead of github-pages
+gem "jekyll", "~> 4.3.3"
+# gem "github-pages", "~> 227", group: :jekyll_plugins
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -17,6 +20,8 @@ gem "minima", "~> 2.5"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  # Add jekyll-sitemap for better SEO on Cloudflare Pages
+  gem "jekyll-sitemap"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
